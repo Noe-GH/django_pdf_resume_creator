@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <form method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name Last name">
+          </div>
+          <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="user@example.com">
+            </div>
+            <div class="form-group">
+              <label for="">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+            </div>
+  
+            <div class="form-group">
+              <label for="">About you</label>
+              <textarea type="text" class="form-control" id="summary" name="summary" placeholder="Tell us about you"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Degree</label>
+              <input type="text" class="form-control" id="degree" name="degree" placeholder="Higher degree">
+            </div>
+            <div class="form-group">
+              <label for="">University</label>
+              <input type="text" class="form-control" id="university" name="university" placeholder="Where did you study?">
+            </div>
+            <div class="form-group">
+              <label for="">Previous jobs</label>
+              <textarea type="text" class="form-control" id="previous_jobs" name="previous_jobs" placeholder="Tell us about your experience"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Skills</label>
+              <textarea type="text" class="form-control" id="skills" name="skills" placeholder="What are your main skills?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
